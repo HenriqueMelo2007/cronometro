@@ -1,4 +1,7 @@
-let decimos = 00
+let decimos = 0
+let segundos = 0
+let minutos = 0
+let horas = 0
 
 const comecar = document.querySelector('#btn-comecar')
 const parar = document.querySelector('#btn-parar')
@@ -12,5 +15,24 @@ function comecarCC () {
 
 function counterDecimosNN () {
   decimos++
+  
   document.querySelector('#number-decimos').innerHTML = decimos
+  document.querySelector('#number-segundos').innerHTML = segundos
+  document.querySelector('#number-minutos').innerHTML = minutos
+  document.querySelector('#number-horas').innerHTML = horas
+
+  if (decimos == 10) {
+    decimos = 0
+    segundos++
+  }
+
+  if (segundos == 60) {
+    segundos = 0
+    minutos++
+  }
+
+  if (minutos == 60) {
+    minutos = 0
+    horas++
+  }
 }
