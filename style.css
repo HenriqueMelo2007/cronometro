@@ -7,8 +7,8 @@
 }
 
 :root {
-  --color-one: rgb(18, 18, 160);
-  --color-two: rgb(255, 255, 255);
+  --color-one: rgb(0, 0, 0);
+  --color-two: rgb(255, 230, 0);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 .container {
   height: 50%;
-  width: 50%;
+  width: 100%;
 
   display: flex;
   gap: 20px;
@@ -37,13 +37,25 @@ body {
   gap: 30px;
 }
 
+h1{
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+}
+
 button {
   background-color: var(--color-one);
   border: 1px solid var(--color-two);
   border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
-  padding: 9px 19px;
+  font-size: 18px;
+  padding: 10px 21px;
   transition: 0.4s;
 }
 
@@ -51,4 +63,22 @@ button:hover {
   color: var(--color-one);
   background-color: var(--color-two);
   box-shadow: 0 0 5px 1px var(--color-two);
+}
+
+
+@media (max-width: 690px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 415px) {
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
