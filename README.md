@@ -2,12 +2,10 @@
 
 ## Layout Desktop:
 
-#
 ![preview](images/readme-layout-desktop.png)
 
 ## Layout Mobile:
 
-#
 ![preview](images/readme-layout-mobile.png)
 
 > Information:
