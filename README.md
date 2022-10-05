@@ -10,7 +10,7 @@
 
 > Information:
 
-Cronômetro com três funcionalidades, feito para prática e aprendizado de conceitos JavaScript.
+Cronômetro com três funcionalidades: começar, parar e zerar. Feito para prática e aprendizado de conceitos JavaScript. O cronômetro conta com quatro unidades, são elas: déscimos, segundos, minutos e horas.
 
 ## 🛠 Technologies
 
